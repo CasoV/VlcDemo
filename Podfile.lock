@@ -1,0 +1,20 @@
+PODS:
+  - MobileVLCKit (3.1.2)
+  - NodeMediaClient (2.4.4)
+
+DEPENDENCIES:
+  - MobileVLCKit (= 3.1.2)
+  - NodeMediaClient
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - MobileVLCKit
+    - NodeMediaClient
+
+SPEC CHECKSUMS:
+  MobileVLCKit: d40c0347b7e3fe901c8ad3811437668b7d042af9
+  NodeMediaClient: ec3925f72c0c4a7b6500bfbded65659e665c5605
+
+PODFILE CHECKSUM: f5b2d34e0b13eeff6a800bf089a8e3fb1c404752
+
+COCOAPODS: 1.5.3

@@ -13,6 +13,8 @@
 		034D73D221071E57008F1570 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 034D73D121071E57008F1570 /* Assets.xcassets */; };
 		034D73D521071E57008F1570 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 034D73D321071E57008F1570 /* LaunchScreen.storyboard */; };
 		034D73D821071E57008F1570 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 034D73D721071E57008F1570 /* main.m */; };
+		03F463B62108607300B56689 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 03F463B52108607300B56689 /* libz.tbd */; };
+		C05170E512AFD6FCACAB3D80 /* Pods_VlcDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C2EC27F606F326423609CCF /* Pods_VlcDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,16 @@
 		034D73D421071E57008F1570 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		034D73D621071E57008F1570 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		034D73D721071E57008F1570 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		03591849210806A800773AEE /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		035918D021080B9100773AEE /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		035918D221080BA300773AEE /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
+		035918D421080BAE00773AEE /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		035918D621080BBA00773AEE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		035918D821080BC600773AEE /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		03F463B52108607300B56689 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		0C2EC27F606F326423609CCF /* Pods_VlcDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VlcDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AB6C14FCA7DB9B967C3D007 /* Pods-VlcDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VlcDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-VlcDemo/Pods-VlcDemo.release.xcconfig"; sourceTree = "<group>"; };
+		4DA0739C100508DA01E31178 /* Pods-VlcDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VlcDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VlcDemo/Pods-VlcDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +45,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03F463B62108607300B56689 /* libz.tbd in Frameworks */,
+				C05170E512AFD6FCACAB3D80 /* Pods_VlcDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +58,8 @@
 			children = (
 				034D73C721071E56008F1570 /* VlcDemo */,
 				034D73C621071E56008F1570 /* Products */,
+				C39B22CB72F3BF380069BD60 /* Pods */,
+				B492739EF6BBCA5B78B1C357 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +87,30 @@
 			path = VlcDemo;
 			sourceTree = "<group>";
 		};
+		B492739EF6BBCA5B78B1C357 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				03F463B52108607300B56689 /* libz.tbd */,
+				035918D821080BC600773AEE /* CoreMedia.framework */,
+				035918D621080BBA00773AEE /* CoreGraphics.framework */,
+				035918D421080BAE00773AEE /* VideoToolbox.framework */,
+				035918D221080BA300773AEE /* libbz2.tbd */,
+				035918D021080B9100773AEE /* libiconv.tbd */,
+				03591849210806A800773AEE /* AVFoundation.framework */,
+				0C2EC27F606F326423609CCF /* Pods_VlcDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C39B22CB72F3BF380069BD60 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4DA0739C100508DA01E31178 /* Pods-VlcDemo.debug.xcconfig */,
+				2AB6C14FCA7DB9B967C3D007 /* Pods-VlcDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -78,6 +118,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 034D73DB21071E57008F1570 /* Build configuration list for PBXNativeTarget "VlcDemo" */;
 			buildPhases = (
+				BF6B6A57876E7BA68AD43FF0 /* [CP] Check Pods Manifest.lock */,
 				034D73C121071E56008F1570 /* Sources */,
 				034D73C221071E56008F1570 /* Frameworks */,
 				034D73C321071E56008F1570 /* Resources */,
@@ -135,6 +176,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BF6B6A57876E7BA68AD43FF0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VlcDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		034D73C121071E56008F1570 /* Sources */ = {
@@ -281,15 +343,22 @@
 		};
 		034D73DC21071E57008F1570 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DA0739C100508DA01E31178 /* Pods-VlcDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 66X66NDTEY;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = VlcDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = atide.VlcDemo;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/VlcDemo/FFmpeg-iOS/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cn.vlcDemo.klive;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -297,15 +366,22 @@
 		};
 		034D73DD21071E57008F1570 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2AB6C14FCA7DB9B967C3D007 /* Pods-VlcDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 66X66NDTEY;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = VlcDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = atide.VlcDemo;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/VlcDemo/FFmpeg-iOS/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cn.vlcDemo.klive;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
